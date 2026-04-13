@@ -1,0 +1,56 @@
+{
+  "constraints": {
+    "durationSec": {
+      "min": 120,
+      "max": 240
+    },
+    "audioBitrateKbps": {
+      "min": 320
+    },
+    "sampleRateHz": {
+      "min": 44100
+    },
+    "imageWidthPx": {
+      "min": 1024,
+      "max": 2048
+    },
+    "imageHeightPx": {
+      "min": 1024,
+      "max": 2048
+    }
+  },
+  "cover": {
+    "provider": "track",
+    "onlyWhenTrackImageMissingOrInvalid": false,
+    "doubao": {
+      "baseUrl": "https://operator.las.cn-beijing.volces.com",
+      "model": "doubao-seedream-4-5-251128",
+      "size": "2048x2048",
+      "responseFormat": "url",
+      "watermark": false,
+      "imageCount": 1
+    }
+  },
+  "audioOutput": {
+    "format": "wav",
+    "wavPollIntervalSec": 10,
+    "wavTimeoutSec": 300
+  },
+  "promptEngineering": {
+    "trendPreset": "introspective_pop",
+    "avoidAiSound": true,
+    "humanizationDirectives": [
+      "Avoid overly perfect quantization and repetitive loop feel.",
+      "Use dynamic contrast, arrangement evolution, and realistic transitions.",
+      "Prefer memorable motifs over generic ambient filler.",
+      "Keep vocals expressive and human, not robotic or overly synthetic."
+    ]
+  },
+  "netease": {
+    "enabled": false,
+    "mode": "playwright",
+    "uploadUrl": "https://music.163.com/#/my/music/cloud/",
+    "waitForManualLoginSec": 180,
+    "perTrackTimeoutSec": 180
+  }
+}

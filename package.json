@@ -1,0 +1,13 @@
+{
+  "name": "suno-deepseek-music",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "playwright": "^1.54.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "check": "node --check index.js"
+  }
+}
